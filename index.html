@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Calculadora</title>
+  </head>
+  <body>
+    <h1 class="center">CALCULATOR</h1>
+    <h2>by Santiago</h2>
+    <div class="calculator">
+      
+        <div class="teclas">
+          <input type="text" id="pantalla" readonly />
+        </div>
+        <div class="teclas">
+          <input type="button" value="AC" onclick="borra()" />
+          <input type="button" value="" onclick="agrega('')" />
+          <input type="button" value="%" onclick="agrega('%')" />
+          <input type="button" value="/" onclick="agrega('/')" />
+        </div>
+        <div class="teclas">
+          <input type="button" value="7" onclick="agrega('7')" />
+          <input type="button" value="8" onclick="agrega('8')" />
+          <input type="button" value="9" onclick="agrega('9')" />
+          <input type="button" value="*" onclick="agrega('*')" />
+        </div>
+        <di class="teclas">
+          <input type="button" value="4" onclick="agrega('4')" />
+          <input type="button" value="5" onclick="agrega('5')" />
+          <input type="button" value="6" onclick="agrega('6')" />
+          <input type="button" value="-" onclick="agrega('-')" />
+        </di>
+        <di class="teclas">
+          <input type="button" value="1" onclick="agrega('1')" />
+          <input type="button" value="2" onclick="agrega('2')" />
+          <input type="button" value="3" onclick="agrega('3')" />
+          <input type="button" value="+" onclick="agrega('+')" />
+        </di>
+        <div class="teclas">
+          <input type="button" value="0" onclick="agrega('0')" />
+          <input type="button" value="." onclick="agrega('.')" />
+          <input type="button" value="C" onclick="borra()" />
+          <input type="button" value="=" onclick="calcula()" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
